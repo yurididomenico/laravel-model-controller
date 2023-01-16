@@ -10,10 +10,10 @@ class HomeController extends Controller
     public function index()
     {
         // 'seclect * from movies'
-        $movie = Movie::all();
+        $movies = Movie::all();
 
+        // dd($movies);
 
-
-        return view('welcome');
+        return view('welcome', compact('movies'));
     }
 }
