@@ -10,7 +10,7 @@ class HomeController extends Controller
     public function index()
     {
         // 'seclect * from movies'
-        $movie = Movie;
+        $movie = Movie::all();
 
 
 
