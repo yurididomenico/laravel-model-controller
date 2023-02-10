@@ -14,6 +14,7 @@ class HomeController extends Controller
 
         // dd($movies);
 
+
         return view('welcome', compact('movies'));
     }
 }
